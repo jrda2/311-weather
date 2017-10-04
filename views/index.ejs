@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>311 Weather</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">    
+  </head>
+  <body>
+    
+      <div class="container">
+          <div class="header clearfix">
+            <nav>
+              <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="http://github.com/jrda2/311-weather">Github</a>
+                </li>
+              </ul>
+            </nav>
+            <h3 class="text-muted">311 Weather</h3>
+          </div>
+
+      <div class="jumbotron">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+          <input type="submit" class="ghost-button btn-success" value="Get Weather">
+        </form>
+      </div>
+        <% if(weather !== null){ %>
+          <div class='row'>
+            <h3 class='text-center'>Today's Weather Forecast</h3> </br>
+          </div>
+          <div class="row">
+            <p><%= weather %></p>
+            <p><%= weather_info2 %></p>
+          </div>
+        <% } %>
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+      
+    </div>
+  </body>
+</html>

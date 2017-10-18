@@ -1,9 +1,10 @@
 # 311 Weather
 
-A web app created using Node.js, Express, EJS, and Bootstrap. The data is provided using the Open Weather API. A user will need to submit the name of a 
+A web app created using Node.js, Express, EJS, and Bootstrap. The data is provided using the Open Weather API. A user will need to submit the name of a
 city and the current weather for today will be generated.
 
 ## Demo
+
 * [Link](http://weather.daestrada.com)
 
 ## Installing
@@ -33,5 +34,3 @@ Below is what you will need to run the development version of the app:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-

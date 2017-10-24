@@ -28,7 +28,7 @@ app.post('/', function (req, res) {
       if(weather.main == undefined){
         res.render('index', {weather: null, error: 'Error, please try again'});
       } else {
-        let weatherText = `It's currently ${weather.weather[0].main} and ${weather.main.temp} degrees in ${weather.name}!`;
+        let weatherText = `Expect ${weather.weather[0].main} and ${weather.main.temp} degrees in ${weather.name}!`;
         let weatherInfo2 = `Today should include a high of ${weather.main.temp_max} with a low of ${weather.main.temp_min}`;
         let weather_ico = `http://openweathermap.org/img/w/`+ weather.weather[0].icon +`.png`;
         res.render('index', {weather: weatherText, weather_info2: weatherInfo2, weatherico: weather_ico, error: null});

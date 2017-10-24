@@ -5,17 +5,17 @@ city and the current weather for today will be generated.
 
 ## Demo
 
-* [Link](http://weather.daestrada.com)
+* [Link](http://weather.dcge.co)
 
 ## Installing
 
 Below is what you will need to run the development version of the app:
 
-- Ensure that you have Node.js and npm installed
+- Ensure that you have node.js and npm installed
 
 * Clone the repo
-* run 'npm install' to install all dependcies
-* run 'npm start' for the app to run
+* run 'npm install' to install all dependencies
+* run 'npm start' for the app
 
 
 ## Built With
